@@ -4,16 +4,16 @@
   "url": "https://sukebei.nyaa.si",
   "name": "Sukebei",
   "description": "Parser for Sukebei",
-  "author": "morpheasgr, LivingWithHippos",
+  "author": "Pepits",
   "supported_categories": {
     "all": "0_0",
-    "anime": "1_0",
-    "doujinshi": "2_0",
-    "games": "4_0",
-    "manga": "6_0",
-    "pictures": "7_0",
-    "photobooks": "8_0",
-    "videos": "5_0"
+    "anime": "1_1",
+    "doujinshi": "1_2",
+    "games": "1_3",
+    "manga": "1_4",
+    "pictures": "1_5",
+    "photobooks": "2_1",
+    "videos": "2_2"
   },
   "search": {
     "category": "${url}/?q=${query}&c=${category}&p=${page}",
@@ -48,7 +48,7 @@
         "regex_use": "first",
         "regexps": [
           {
-            "regex": "(\\/download\\/\\d+\\.torrent)",
+            "regex": "(\/download\/\\d+\\.torrent)",
             "group": 1,
             "slug_type": "append_url"
           }
@@ -98,7 +98,7 @@
         "regex_use": "first",
         "regexps": [
           {
-            "regex": "href=\"(\\/view\\/[^\"]+)\"\\s+title",
+            "regex": "href=\"(\/view\/[^\"]+)\"\\s+title",
             "group": 1,
             "slug_type": "append_url"
           }
